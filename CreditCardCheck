@@ -1,0 +1,316 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+   printf("Please type your credit card number: ");
+   long long CardNumber = GetLongLong();
+    
+   
+   
+   if(CardNumber < 999999999999 || CardNumber > 99999999999999999)
+   {
+    printf("INVALID\n");
+}
+   else if(CardNumber > 999999999999 && CardNumber < 99999999999999) {
+  
+  int second = (CardNumber/10)%10;
+  int four = (CardNumber/1000)%10;
+  int six = (CardNumber/100000)%10;
+  int eight = (CardNumber/10000000)%10;
+  int ten = (CardNumber/1000000000)%10;
+  int twelve = (CardNumber/100000000000)%10; 
+  int one = (CardNumber)%10;
+  int three = (CardNumber/100)%10;
+  int five = (CardNumber/10000)%10;
+  int seven = (CardNumber/1000000)%10;
+  int nine = (CardNumber/100000000)%10;
+  int eleven = (CardNumber/10000000000)%10; 
+  int thirdteen = (CardNumber/1000000000000)%10;
+  int answer1 =0;
+  int answer2 =0;
+  int answer3 =0;
+  int answer4 =0;
+  int answer5 =0;
+  int answer6 =0;
+  
+   if (second*2 >9){
+   answer1 =(second*2 - 10)+1; }
+   else {
+   answer1 = second*2;
+   }
+     if (four*2 >9){
+   answer2 =(four*2 - 10)+1; }
+   else {
+   answer2 = four*2;
+   }
+    if (six*2 >9){
+   answer3 =(six*2 - 10)+1; }
+   else {
+   answer3 = six*2;
+   }
+      if (eight*2 >9){
+   answer4 =(eight*2 - 10)+1; }
+   else {
+   answer4 = eight*2;
+   }
+      if (ten*2 >9){
+   answer5 =(ten*2 - 10)+1; }
+   else {
+   answer5 = ten*2;
+   }
+      if (twelve*2 >9){
+   answer6 =(twelve*2 - 10)+1; }
+   else {
+   answer6 = twelve*2;
+   }
+   int sumEven=one+three+five+seven+nine+eleven+thirdteen;
+   int sumOdd=answer1+answer2+answer3+answer4+answer5+answer6;
+   int Total=sumEven+sumOdd;
+   if (Total == 10 || Total == 20 || Total == 30 || Total == 40 || Total == 50 || 
+   Total == 60 || Total == 70 || Total == 80 || Total == 90 || Total == 100) {
+   printf("VISA\n");
+   }
+   else {
+   printf("INVALID\n");
+   }
+  
+  } 
+   if(CardNumber > 333333333333333 && CardNumber < 388888888888888) {
+
+  int one =       (CardNumber)%10;
+  int second =    (CardNumber/10)%10;
+  int three =     (CardNumber/100)%10;
+  int four =      (CardNumber/1000)%10;
+  int five =      (CardNumber/10000)%10; 
+  int six =       (CardNumber/100000)%10;
+  int seven =     (CardNumber/1000000)%10;
+  int eight =     (CardNumber/10000000)%10;
+  int nine =      (CardNumber/100000000)%10;
+  int ten =       (CardNumber/1000000000)%10;
+  int eleven =    (CardNumber/10000000000)%10; 
+  int twelve =    (CardNumber/100000000000)%10; 
+  int thirdteen = (CardNumber/1000000000000)%10;
+  int fourteen =  (CardNumber/10000000000000)%10;
+  int fithteen =  (CardNumber/100000000000000)%10;
+  
+
+  int answer1 = 0;
+  int answer2 = 0;
+  int answer3 = 0;
+  int answer4 = 0;
+  int answer5 = 0;
+  int answer6 = 0;
+  int answer7 = 0;
+  
+    if (second*2 >9){
+   answer1 =(second*2 - 10)+1; }
+   else {
+   answer1 = second*2;
+   }
+     if (four*2 >9){
+   answer2 =(four*2 - 10)+1; }
+   else {
+   answer2 = four*2;
+   }
+    if (six*2 >9){
+   answer3 =(six*2 - 10)+1; }
+   else {
+   answer3 = six*2;
+   }
+      if (eight*2 >9){
+   answer4 =(eight*2 - 10)+1; }
+   else {
+   answer4 = eight*2;
+   }
+      if (ten*2 >9){
+   answer5 =(ten*2 - 10)+1; }
+   else {
+   answer5 = ten*2;
+   }
+      if (twelve*2 >9){
+   answer6 =(twelve*2 - 10)+1; }
+   else {
+   answer6 = twelve*2;
+   }
+       if (fourteen*2 >9){
+   answer7 =(fourteen*2 - 10)+1; }
+   else {
+   answer7 = fourteen*2;
+   }
+   
+  
+   int sumEven=one+three+five+seven+nine+eleven+thirdteen+fithteen;
+   int sumOdd=answer1+answer2+answer3+answer4+answer5+answer6+answer7;
+   int Total=sumEven+sumOdd;
+
+   
+   if (Total == 10 || Total == 20 || Total == 30 || Total == 40 || Total == 50 || 
+   Total == 60 || Total == 70 || Total == 80 || Total == 90 || Total == 100) {
+   printf("AMEX\n");
+   }
+   else 
+   printf("INVALID\n");
+   }
+   
+   else if(CardNumber > 5000000000000000 && CardNumber < 9999999999999999) {
+  int second = (CardNumber/10)%10;
+  int four = (CardNumber/1000)%10;
+  int six = (CardNumber/100000)%10;
+  int eight = (CardNumber/10000000)%10;
+  int ten = (CardNumber/1000000000)%10;
+  int twelve = (CardNumber/100000000000)%10; 
+  int fourteen = (CardNumber/10000000000000)%10;
+  int sixteen = (CardNumber/1000000000000000)%10;
+  int one = (CardNumber)%10;
+  int three = (CardNumber/100)%10;
+  int five = (CardNumber/10000)%10;
+  int seven = (CardNumber/1000000)%10;
+  int nine = (CardNumber/100000000)%10;
+  int eleven = (CardNumber/10000000000)%10; 
+  int thirdteen = (CardNumber/1000000000000)%10;
+  int fithteen = (CardNumber/100000000000000)%10;
+
+  int answer1 =0;
+  int answer2 =0;
+  int answer3 =0;
+  int answer4 =0;
+  int answer5 =0;
+  int answer6 =0;
+  int answer7 =0;
+  int answer8 =0;
+  
+   if (second*2 >9){
+   answer1 =(second*2 - 10)+1; }
+   else {
+   answer1 = second*2;
+   }
+     if (four*2 >9){
+   answer2 =(four*2 - 10)+1; }
+   else {
+   answer2 = four*2;
+   }
+    if (six*2 >9){
+   answer3 =(six*2 - 10)+1; }
+   else {
+   answer3 = six*2;
+   }
+      if (eight*2 >9){
+   answer4 =(eight*2 - 10)+1; }
+   else {
+   answer4 = eight*2;
+   }
+      if (ten*2 >9){
+   answer5 =(ten*2 - 10)+1; }
+   else {
+   answer5 = ten*2;
+   }
+      if (twelve*2 >9){
+   answer6 =(twelve*2 - 10)+1; }
+   else {
+   answer6 = twelve*2;
+   }
+       if (fourteen*2 >9){
+   answer7 =(fourteen*2 - 10)+1; }
+   else {
+   answer7 = fourteen*2;
+   }
+   if (sixteen*2 >9){
+   answer8 =(sixteen*2 - 10)+1; }
+   else {
+   answer8 = sixteen*2;
+   }
+   int sumEven=one+three+five+seven+nine+eleven+thirdteen+fithteen;
+   int sumOdd=answer1+answer2+answer3+answer4+answer5+answer6+answer7+answer8;
+   int Total=sumEven+sumOdd;
+   if (Total == 10 || Total == 20 || Total == 30 || Total == 40 || Total == 50 || 
+   Total == 60 || Total == 70 || Total == 80 || Total == 90 || Total == 100) {
+   printf("MASTERCARD\n");
+   }
+   else {
+   printf("INVALID\n");
+   }
+  }  
+  else if (CardNumber > 555555555555555 && CardNumber < 5555555555555555) {
+  int second = (CardNumber/10)%10;
+  int four = (CardNumber/1000)%10;
+  int six = (CardNumber/100000)%10;
+  int eight = (CardNumber/10000000)%10;
+  int ten = (CardNumber/1000000000)%10;
+  int twelve = (CardNumber/100000000000)%10; 
+  int fourteen = (CardNumber/10000000000000)%10;
+  int sixteen = (CardNumber/1000000000000000)%10;
+  int one = (CardNumber)%10;
+  int three = (CardNumber/100)%10;
+  int five = (CardNumber/10000)%10;
+  int seven = (CardNumber/1000000)%10;
+  int nine = (CardNumber/100000000)%10;
+  int eleven = (CardNumber/10000000000)%10; 
+  int thirdteen = (CardNumber/1000000000000)%10;
+  int fithteen = (CardNumber/100000000000000)%10;
+  
+  int answer1 =0;
+  int answer2 =0;
+  int answer3 =0;
+  int answer4 =0;
+  int answer5 =0;
+  int answer6 =0;
+  int answer7 =0;
+  int answer8 =0;
+  
+   if (second*2 >9){
+   answer1 =(second*2 - 10)+1; }
+   else {
+   answer1 = second*2;
+   }
+     if (four*2 >9){
+   answer2 =(four*2 - 10)+1; }
+   else {
+   answer2 = four*2;
+   }
+    if (six*2 >9){
+   answer3 =(six*2 - 10)+1; }
+   else {
+   answer3 = six*2;
+   }
+      if (eight*2 >9){
+   answer4 =(eight*2 - 10)+1; }
+   else {
+   answer4 = eight*2;
+   }
+      if (ten*2 >9){
+   answer5 =(ten*2 - 10)+1; }
+   else {
+   answer5 = ten*2;
+   }
+      if (twelve*2 >9){
+   answer6 =(twelve*2 - 10)+1; }
+   else {
+   answer6 = twelve*2;
+   }
+       if (fourteen*2 >9){
+   answer7 =(fourteen*2 - 10)+1; }
+   else {
+   answer7 = fourteen*2;
+   }
+   if (sixteen*2 >9){ 
+   answer8 =(sixteen*2 - 10)+1; }
+   else {
+   answer8 = sixteen*2;
+   }
+   int sumEven=one+three+five+seven+nine+eleven+thirdteen+fithteen;
+   int sumOdd=answer1+answer2+answer3+answer4+answer5+answer6+answer7+answer8;
+   int Total=sumEven+sumOdd;
+   if (Total == 10 || Total == 20 || Total == 30 || Total == 40 || Total == 50 || 
+   Total == 60 || Total == 70 || Total == 80 || Total == 90 || Total == 100) {
+   printf("VISA\n");
+   }
+   else {
+   printf("INVALID\n");
+   }
+  }
+  return 0; 
+ }
+  
+ 
+   
